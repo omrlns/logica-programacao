@@ -1,0 +1,1 @@
+alert("Podemos fazer mais com JavaScript!")
