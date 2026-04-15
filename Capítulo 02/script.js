@@ -2,7 +2,7 @@
 // alert("Esse é o meu segundo programa!");
 
 function pulaLinha() {
-    document.write("<br>");
+    document.write("<hr>");
 }
 
 document.write("Olá mundo!"); // isso escreve diretamente no index.html
