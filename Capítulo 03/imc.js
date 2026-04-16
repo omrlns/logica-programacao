@@ -1,0 +1,1 @@
+import {pularLinha, escrever} from "../Capítulo 02/script.js";

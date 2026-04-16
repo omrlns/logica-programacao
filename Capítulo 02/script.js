@@ -1,8 +1,8 @@
-function pularLinha() {
+export function pularLinha() {
     document.write("<hr>");
 }
 
-function escrever(texto) {
+export function escrever(texto) {
     document.write(texto);
     pularLinha();
 }
