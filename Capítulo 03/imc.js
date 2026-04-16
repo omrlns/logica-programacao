@@ -1,1 +1,17 @@
 import { escrever } from "../Capítulo 02/utilitarios.js";
+
+let peso = 78;  
+let altura = 1.80;
+let imc = (peso / (altura * altura)).toFixed(0);
+
+escrever(`O IMC do usuário é: ${imc}.`, "resultado")
+
+function calcularIMC(peso, altura) {
+    const imc = (peso / (altura * altura)).toFixed(0);
+    return imc;
+}
+
+// calcularIMC(78, 1.80) // a ordem dos paramêtros influencia diretamente no resultado
+escrever(`Resultado do IMC: ${calcularIMC(78, 1.80)}.`, "resultado")
+escrever(`O usuário está "${calcularIMC(78, 1.80) - 18.5} pontos" acima do limite da magreza!`, "resultado")
+escrever(`O usuário está "${calcularIMC(78, 1.80) - 35} pontos" acima do limite da obesidade severa!`, "resultado")
