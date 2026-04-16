@@ -1,9 +1,4 @@
-export function escrever(texto, idElemento) {
-    // seleciona o elemento que criamos no html
-    const saida = document.getElementById(idElemento);
-    // adiciona o texto dentro do elemento e quebra a linha
-    saida.innerHTML += texto + "<hr>"
-}
+import { escrever } from "./utilitarios.js";
 
 escrever("Olá mundo!", "resultado");
 escrever("Esse é o meu segundo programa!", "resultado");
