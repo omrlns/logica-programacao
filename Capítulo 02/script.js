@@ -5,42 +5,23 @@ function pularLinha() {
     document.write("<hr>");
 }
 
-document.write("Olá mundo!"); // isso escreve diretamente no index.html
-pularLinha()
-document.write("Esse é o meu segundo programa!");
+function escrever(texto) {
+    document.write(texto);
+    pularLinha();
+}
 
-document.write("<br>A minha idade é: ");
-document.write(22);
-pularLinha()
-
-document.write(25 + 25); // resultado = 50 (soma dos valores)
-document.write("25" + "25"); // resultado = 2525 (concatenação dos valores)
-pularLinha()
-
-document.write("Eu nasci em ");
-document.write(2026 - 23);
-pularLinha()
-
-document.write("A soma das primeiras três dezenas é: ");
-document.write(10 + 20 + 30);
-pularLinha()
-
-document.write("A média das primeiras três dezenas é: ");
-document.write((10 + 20 + 30) / 3);
-pularLinha()
-
-document.write("A minha idade é " + 22);
-pularLinha()
-document.write("A soma das nossas idades é: " + (22 + 20 + 21));
-pularLinha()
-document.write("A média das nossas idades é: " + ((22 + 20 + 21) / 3));
-pularLinha()
-document.write("Eu tenho " + 22 + " anos e o meu irmão tem " + 20 + " anos");
-pularLinha()
-document.write("A diferença de idade entre nós dois é de " + (22 -  20) + " anos");
-pularLinha()
-document.write("Em média, um casal gera um filho aos 28 anos de idade, então podemos considerar que desde o 'Ano 0' se passaram " + (2026 / 28).toFixed(0) + " gerações.");
-pularLinha()
+escrever("Olá mundo!");
+escrever("Esse é o meu segundo programa!");
+escrever(`A minhda idade é: ${22}`);
+escrever(`${(25 + 25) + "25" + "25"}`);
+escrever(`Eu nasci em ${2026 - 23}`);
+escrever(`A soma das primeiras três dezenas é: ${10 + 20 + 30}`);
+escrever(`A média das primeiras três dezenas é: ${(10 + 20 + 30) / 3}`);
+escrever(`A soma das nossas idades é: ${22 + 20 + 21}`);
+escrever(`A média das nossas idades é: ${((22 + 20 + 21) / 3)}`);
+escrever(`O Marlon tem ${22} anos e o seu irmão Gustavo tem ${20} anos.`);
+escrever(`A diferença de idade entre os dois irmãos é de ${2} anos.`)
+escrever(`Em média, um casal gera um filho aos 28 anos de idade, então podemos considerar que desde o "Ano 0" se passaram ${(2026 / 28).toFixed(0)} gerações.`)
 
 var ano = 2026;
 document.write("Eu nasci em " + (ano - 23));
