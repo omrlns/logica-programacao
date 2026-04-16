@@ -1,10 +1,8 @@
-export function pularLinha() {
-    document.write("<hr>");
-}
-
 export function escrever(texto) {
-    document.write(texto);
-    pularLinha();
+    // seleciona o elemento que criamos no html
+    const saida = document.getElementById("resultado");
+    // adiciona o texto dentro do elemento e quebra a linha
+    saida.innerHTML += texto + "<hr>"
 }
 
 escrever("Olá mundo!");
@@ -21,7 +19,9 @@ escrever(`A diferença de idade entre os dois irmãos é de ${2} anos.`);
 escrever(`Em média, um casal gera um filho aos 28 anos de idade, então podemos considerar que desde o "Ano 0" se passaram ${(2026 / 28).toFixed(0)} gerações.`);
 
 var ano = 2026;
-var marlonIdade = 23; gustavoIdade = 21; taiseIdade = 20;
+var marlonIdade = 23; 
+var gustavoIdade = 21; 
+var taiseIdade = 20;
 var totalIdades = marlonIdade + gustavoIdade + taiseIdade;
 var mediaIdades = ((marlonIdade + gustavoIdade + taiseIdade) / 3).toFixed(0);
 
