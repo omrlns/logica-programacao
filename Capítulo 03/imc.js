@@ -16,7 +16,10 @@ escrever(`Resultado do IMC: ${calcularIMC(78, 1.80)}.`, "resultado");
 escrever(`O usuário está "${calcularIMC(78, 1.80) - 18.5} pontos" acima do limite da magreza!`, "resultado");
 escrever(`O usuário está "${calcularIMC(78, 1.80) - 35} pontos" acima do limite da obesidade severa!`, "resultado");
 
-let nome = prompt("Bom dia! Qual é o seu nome?");
-let idade = prompt(`Prazer ${nome}, qual é a sua idade?`);
+let nomeUsuario = prompt("Bom dia! Qual é o seu nome?");
+let idadeUsuario = prompt(`Prazer ${nomeUsuario}, qual é a sua idade?`);
+let alturaUsuario = prompt("Qual é a sua altura?");
+let pesoUsuario = prompt("E o seu peso? Nos informe, por favor.");
 
-escrever(`Pessoal, conheçam o(a) ${nome}, ele(a) tem ${idade} anos.`, "resultado");
+calcularIMC(peso, altura);
+escrever(`${nomeUsuario} o seu IMC é '${imc}'.`, "resultado");
