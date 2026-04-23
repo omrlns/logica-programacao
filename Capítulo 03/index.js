@@ -21,5 +21,5 @@ let idadeUsuario = prompt(`Prazer ${nomeUsuario}, qual é a sua idade?`);
 let alturaUsuario = prompt("Qual é a sua altura?");
 let pesoUsuario = prompt("E o seu peso? Nos informe, por favor.");
 
-calcularIMC(peso, altura);
-escrever(`${nomeUsuario} o seu IMC é '${imc}'.`, "resultado");
+let imcDoUsuario = calcularIMC(pesoUsuario, alturaUsuario);
+escrever(`${nomeUsuario} o seu IMC é '${imcDoUsuario}'.`, "resultado");
