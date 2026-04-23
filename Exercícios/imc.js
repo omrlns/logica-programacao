@@ -12,6 +12,6 @@ if (imcDoUsuario < 18.5) {
     escrever(`O seu IMC indica que você está ABAIXO do peso!`)
 } else if (imcDoUsuario > 35) {
     escrever(`O seu IMC indica que você está ACIMA do peso!`)
-} else {
+} else if (imcDoUsuario >= 18.5 && imcDoUsuario <= 35) {
     escrever(`Seu IMC está entre os dois limites!`)
 }
