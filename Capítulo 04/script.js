@@ -2,15 +2,17 @@ import { escrever } from "../Capítulo 02/utilitarios.js"
 
 let nVitoriasA = parseInt(prompt("Quantos jogos o SPFC venceu?"));
 let nEmpatesA = parseInt(prompt("Quantos jogos o SPFC empatou?"));
+let nDerrotasA = parseInt(prompt("Quantos jogos o SPFC perdeu?"));
 let nVitoriasB = parseInt(prompt("Quantos jogos o SCCP venceu?"));
 let nEmpatesB = parseInt(prompt("Quantos jogos o SCCP empatou?"));
+let nDerrotasB = parseInt(prompt("Quantos jogos o SCCP perdeu?"));
 
-function calcularPontos(nVitorias, nEmpates) {
-    return (nVitorias * 3) + nEmpates;
+function calcularPontos(nVitorias, nEmpates, nDerrotas) {
+    return ((nVitorias * 3) + nEmpates) - nDerrotas;
 }
 
-let pontosTimeA = calcularPontos(nVitoriasA, nEmpatesA);
-let pontosTimeB = calcularPontos(nVitoriasB, nEmpatesB);
+let pontosTimeA = calcularPontos(nVitoriasA, nEmpatesA, nDerrotasA);
+let pontosTimeB = calcularPontos(nVitoriasB, nEmpatesB, nDerrotasB);
 
 escrever(`O SPFC está com ${pontosTimeA} pontos.`);
 escrever(`O SCCP está com ${pontosTimeB} pontos.`);
