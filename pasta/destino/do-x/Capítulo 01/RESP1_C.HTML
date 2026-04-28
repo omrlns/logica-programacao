@@ -1,0 +1,9 @@
+<meta charset="utf-8">
+<script>
+    //elaborar um programa que leia o preço de um produto e informe as opções de pagamento da loja.
+    const valorProduto = Number(prompt("Qual o valor do Produto?"))
+    const avista = valorProduto - (valorProduto * 0.10)
+    const aprazo = valorProduto / 3
+    alert(`se o pagamento do produto for à vista, o valor será R$${avista.toFixed(2)},
+    mas se o pagamento do produto for parcelado em 3x, o valor será R$${aprazo.toFixed(2)}`)
+</script>
