@@ -9,7 +9,7 @@ function btnClicado() {
     if (segredo == caixaDoPalpite.value) {
         alert("Parabéns! Você acertou o número secreto!");
     } else {
-        alert("Errou! Tente novamente!")
+        alert("Errou! Tente novamente!");
     }
     caixaDoPalpite.value = "";
 }
